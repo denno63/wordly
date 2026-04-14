@@ -1,0 +1,132 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      max-width: 800px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      overflow: hidden;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .search-form {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+    #word-input {
+      flex: 1;
+      padding: 12px 15px;
+      font-size: 1rem;
+      border: 2px solid #ddd;
+      border-radius: 30px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+    #word-input:focus {
+      border-color: #667eea;
+    }
+    button {
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s;
+    }
+    button:hover {
+      background: #5a67d8;
+      transform: scale(1.02);
+    }
+    .result-card {
+      background: #f8f9ff;
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 20px;
+      border-left: 5px solid #667eea;
+    }
+    .word-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    .pronunciation {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+    .audio-btn {
+      background: #4caf50;
+      padding: 8px 15px;
+      font-size: 0.9rem;
+      margin: 10px 0;
+      border-radius: 20px;
+    }
+    .audio-btn:hover {
+      background: #45a049;
+    }
+    .definition {
+      margin: 15px 0;
+      padding-left: 10px;
+      border-left: 3px solid #764ba2;
+    }
+    .part-of-speech {
+      font-weight: bold;
+      color: #764ba2;
+      margin-top: 10px;
+    }
+    .example {
+      font-style: italic;
+      color: #555;
+      margin: 5px 0;
+    }
+    .synonyms {
+      margin-top: 10px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .synonym-badge {
+      background: #e0e7ff;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      display: inline-block;
+      margin: 3px;
+    }
+    .error {
+      color: #d9534f;
+      background: #f2dede;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  
