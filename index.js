@@ -11,7 +11,8 @@
 
   // Function to display error message
   function showError(message) {
-    resultsDiv.innerHTML = `<div class="error">⚠️ ${message}</div>`;
+    resultsDiv.innerHTML = `<div class="error"> ! ${message}</div>`;
+    
   }
 
   function displayWordData(data, searchedWord) {
